@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightyellow;
+}
+
+/* main */
+/* search box */
+#search-box{
+    display: flex;
+    margin-top:30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* movie display */
+#movieDispay{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+}
+
+/* auto suggestion list */
+ul {
+    list-style: none;
+}
+
+.list {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+.list-items {
+    padding: 10px 5px;
+}
+
+.list-items:hover {
+    background-color: #dddddd;
+}

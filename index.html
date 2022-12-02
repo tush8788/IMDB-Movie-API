@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>MY Movie</title>
+        <!-- bootstrap 4 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- css -->
+        <link rel="stylesheet" href="/css/style.css">
+       
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- nav bar -->
+        <header>
+            <nav class="navbar navbar-dark bg-dark justify-content-between">
+                <a href="#" class="navbar-brand text-white">My Movie</a>
+                <div class="form-inline">
+                    <a href="#"><button class="btn btn-outline-success my-2 my-sm-0">My Favorite</button></a>
+                </div>
+              </nav>
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- search box -->
+            <section id="search-box">
+                <div id="search-container">
+                    <div>
+                        <input type="text" id="movieName"  placeholder="Search Movie Title..." required>
+                        
+                        <button id="search-movie" onclick="callIMDB()">Search</button>
+                        <ul class="list"></ul>
+                    </div>
+                   
+                </div>    
+            </section>
+
+            <!-- display movies container-->
+            <section id="movieDispay">
+                
+            </section>
+        </main>
+        <!-- for auto complete feature -->
+        <script src="/scripts/autocompleteScript.js"></script>
+        <script src="/scripts/index.js"></script>
+        <!-- <script src="viewFullInfo.js"></script> -->
+    </body>
+</html>
